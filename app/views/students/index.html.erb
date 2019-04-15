@@ -1,0 +1,9 @@
+<h1> Formulario </h1>
+<%= form_for :user, :url => { :action => :create } do |f| %>
+    Nombre <%= f.text_field :nom %><br>
+    Apellido <%= f.text_field :ape %><br>
+    Grado <%= f.text_field :grad %><br>
+    Dirección <%= f.text_field :dir %><br>
+    
+<%= f.submit %>
+<% end %>

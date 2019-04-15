@@ -1,0 +1,19 @@
+<h1>Tablas</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Grado</th>
+    <th>Dirección</th>
+  </tr>
+
+  <% @users.each do |student| %>
+    <tr>
+      <td><%= student.nom %></td>
+      <td><%= student.ape %></td>
+      <td><%= student.grad %></td>
+      <td><%= student.dir %></td>
+    </tr>
+  <% end %>
+</table>
